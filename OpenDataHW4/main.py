@@ -17,7 +17,7 @@ def writeResuts(gameResults, outputName):
         for i, q in enumerate(gameResults):
             f.write(f'Вопрос {i+1}: \n')
             success = 'да' if q['success'] == 'Yes' else 'нет'
-            f.write(f'Успещно: {success} \n')
+            f.write(f'Успешно: {success} \n')
             f.write(f'Количество попыток: {q["tries"]} \n')
             f.write(f'Затраченное время: {q["time"]} \n\n\n')
 
